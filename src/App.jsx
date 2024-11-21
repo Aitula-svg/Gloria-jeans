@@ -1,3 +1,9 @@
+import { Input } from "./components/UI/Input";
+
 export const App = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Input />
+    </div>
+  );
 };
