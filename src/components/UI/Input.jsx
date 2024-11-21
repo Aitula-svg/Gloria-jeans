@@ -11,14 +11,13 @@ export const Input = ({
     <div>
       <TextField
         type={type}
-        onChange={onchange}
+        onChange={onChange}
         value={value}
         placeholder={placeholder}
         {...props}
         sx={{
           width: "400px",
           padding: "20px",
-          margin: "100px  500px",
         }}
       />
     </div>
