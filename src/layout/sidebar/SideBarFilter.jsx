@@ -6,7 +6,7 @@ const SideBarFilter = ({ text, Icon }) => {
       <IconWrapper>
         <Icon />
       </IconWrapper>
-      <span>{text}</span>
+      <StyleSpan>{text}</StyleSpan>
     </StyleDiv>
   );
 };
@@ -19,7 +19,7 @@ const StyleDiv = styled("div")({
   gap: "14px",
   height: "60px",
   padding: "0px 0px 0px 30px",
- cursor: "pointer",
+  cursor: "pointer",
 
   "&:hover": {
     color: "green",
@@ -33,4 +33,10 @@ const StyleDiv = styled("div")({
 
 const IconWrapper = styled("div")({
   color: "inherit",
+});
+
+const StyleSpan = styled("span")({
+  color: " #7E8494 ",
+  fontSize: "16px",
+  fontWeight: 600,
 });
