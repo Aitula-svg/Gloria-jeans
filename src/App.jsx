@@ -1,3 +1,9 @@
+import SideBar from "./layout/sidebar/SideBar";
+
 export const App = () => {
-  return <div></div>;
+  return (
+    <div>
+      <SideBar />
+    </div>
+  );
 };
