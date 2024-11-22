@@ -1,26 +1,32 @@
 import { Container, styled } from "@mui/material";
 import { Icons } from "../../assets";
-import SideBarFilter from "./SideBarFilter";
+import SideBarFilter from "./GenderItem";
 import { GENDER } from "../../utils/constants/gender";
 
-const SideBar = () => {
+export const SideBar = () => {
+  const handleGender = (male) => {
+    console.log(male);
+  };
+
   return (
-    <StyledDiv>
+    <StyledAside>
       <Container>
         <StyleIcon />
       </Container>
       <div>
         {GENDER.map((item) => (
-          <SideBarFilter key={item.id} text={item.text} Icon={item.Icon} />
+          <SideBarFilter
+            key={item.id}
+            {...item}
+            onNavigateGender={handleGender}
+          />
         ))}
       </div>
-    </StyledDiv>
+    </StyledAside>
   );
 };
 
-export default SideBar;
-
-const StyledDiv = styled("div")({
+const StyledAside = styled("aside")({
   width: "218px",
   height: "1101px",
   margin: "0px",

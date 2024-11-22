@@ -1,17 +1,17 @@
 import { styled } from "@mui/material";
 
-const SideBarFilter = ({ text, Icon }) => {
+const CenderItem = ({ text, Icon, onNavigateGender }) => {
   return (
     <StyleDiv>
       <IconWrapper>
         <Icon />
       </IconWrapper>
-      <StyleSpan>{text}</StyleSpan>
+      <StyleSpan onClick={onNavigateGender}>{text}</StyleSpan>
     </StyleDiv>
   );
 };
 
-export default SideBarFilter;
+export default CenderItem;
 
 const StyleDiv = styled("div")({
   display: "flex",
