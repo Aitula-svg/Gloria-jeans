@@ -1,3 +1,7 @@
+import ProductList from "./components/Products/ProductList";
+
 export const App = () => {
-  return <div></div>;
+  return <div>
+    <ProductList/>
+  </div>;
 };
