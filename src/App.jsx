@@ -1,3 +1,9 @@
+import HeaderAdmin from "./layout/HeaderAdmin";
+
 export const App = () => {
-  return <div></div>;
+  return (
+    <div>
+      <HeaderAdmin />
+    </div>
+  );
 };
