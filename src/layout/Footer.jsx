@@ -84,10 +84,7 @@ const StyledDiv = styled("div")({
 });
 
 const StyledFooter = styled("footer")({
-  width: "1440px",
-  height: "266px",
-  border: "2px solid #2E2E2E",
-  margin: "30px",
+  width: "100%",
 });
 
 const StyledIcons = styled("div")({
@@ -103,7 +100,7 @@ const StyledBox = styled("div")({
   display: "flex",
   justifyContent: "columns",
   gap: "146px",
-  marginLeft: "205px",
+  marginLeft: "105px",
   marginTop: "80px",
 });
 
