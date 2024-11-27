@@ -15,6 +15,7 @@ import Filter from "../assets/icon/filter.svg?react";
 import Img from "../assets/icon/img.svg?react";
 import Plus from "../assets/icon/plus.svg?react";
 import Png from "../assets/icon/png.svg?react";
+import Brandname from "../assets/icon/brandname.svg?react";
 export const Icons = {
   Cart,
   Copy,
@@ -33,4 +34,5 @@ export const Icons = {
   Img,
   Heart,
   Png,
+  Brandname,
 };
